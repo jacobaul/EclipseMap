@@ -20,6 +20,7 @@ def write_img(arr, filenumber):
 
     if(args.prefix):
         filename = args.prefix + "-" + str(filenumber) + ".png"
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
     else:
         filename = str(filenumber) + ".png"
 
@@ -28,7 +29,6 @@ def write_img(arr, filenumber):
         normalized.append([])
         for j in range(width):
             normalized[i].append(round(arr[i][j] * 2.55))
-        os.makedirs(os.path.dirname(filename), exist_ok=True)
         f = open(filename, 'wb')
 
     #pypng library supports 2d list of lists.
@@ -205,6 +205,6 @@ if(args.duration):
     end_date = datetime.datetime.strptime(args.start, '%Y-%m-%d-%H-%M-%S') + datetime.timedelta(seconds=args.duration)
 
 if(args.single):
-    write_img(equirec_percentages(start_date, ))
+    write_img(equirec_percentages(start_date, args.resolution),1)
 else:
     write_all_in_range(start_date, end_date, args.resolution, args.time_resolution, args.step)
