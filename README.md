@@ -1,3 +1,4 @@
+![Animated Demo](demo.gif)
 ```
 usage: EclipseMap \[-h\] \[-d DURATION | -s | -e END\] \[-r RESOLUTION\] \[-t TIME_RESOLUTION\] 
 \[-p STEP\] \[-f PREFIX\] \[-v | -q\] start
