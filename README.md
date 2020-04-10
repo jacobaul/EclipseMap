@@ -1,5 +1,6 @@
 ```
-usage: EclipseMap \[-h\] \[-d DURATION | -s | -e END\] \[-r RESOLUTION\] \[-t TIME_RESOLUTION\] \[-p STEP\] \[-f PREFIX\] \[-v | -q\] start
+usage: EclipseMap \[-h\] \[-d DURATION | -s | -e END\] \[-r RESOLUTION\] \[-t TIME_RESOLUTION\] 
+\[-p STEP\] \[-f PREFIX\] \[-v | -q\] start
 
 Generate maps of eclipse brightness across the earth
 
