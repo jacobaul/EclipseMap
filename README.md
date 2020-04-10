@@ -1,3 +1,4 @@
+Create shadow maps of the earth during solar eclipses. Maps are equirectangular projection.
 ![Animated Demo](demo.gif)
 ```
 usage: EclipseMap \[-h\] \[-d DURATION | -s | -e END\] \[-r RESOLUTION\] \[-t TIME_RESOLUTION\] 
