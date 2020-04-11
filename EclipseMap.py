@@ -82,7 +82,7 @@ def lune_percentage(datetime, lon_str, lat_str):
     else: #Annular Eclipse
         log_level("Sun larger in sky, Annular Eclipse", 4)
         if(r_sun-r_moon > angular_sep): #Lune calculation ouside domain. (Annulus)
-            return (math.pi * r_sun**2) - (math.pi*r_moon**2)
+            lune_area = (math.pi * r_sun**2) - (math.pi*r_moon**2)
         else:
             areas = lune_areas(r_moon,r_sun,angular_sep)
             lune_area = areas[2]
